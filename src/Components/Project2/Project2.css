@@ -1,0 +1,75 @@
+
+
+header {
+    min-height: 100vh;
+}
+
+video {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+header section {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    transform: translate(0, -100%);
+    display: grid;
+    place-items: center;
+    color: hsl(0 0% 100%);
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    gap: 0.5rem 0;
+    line-height: 0.9;
+    text-wrap: balance;
+    font-weight: 120;
+}
+
+
+header section::before {
+    content: "";
+    position: absolute;
+    inset: -100% 0 -100% 0;
+    background: hsl(0 0% 0% / 0.5);
+    pointer-events: none;
+    z-index: -1;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+header {
+    transform-origin: 50% 0%;
+    animation: scale-down both ease-in;
+    animation-timeline: view();
+    animation-range: exit;
+    view-timeline: --header;
+}
+
+@keyframes scale-down {
+    to {
+        transform: scale(0.8 0.8);
+    }
+}
+
+header section::before {
+    animation: fade both linear;
+    animation-timeline: --header;
+    animation-range: exit-crossing 0% exit 0%;
+}
+
+@keyframes fade {
+    to {
+        opacity: 0;
+    }
+}

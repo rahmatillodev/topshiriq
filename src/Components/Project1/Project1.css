@@ -1,0 +1,61 @@
+.puzzle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+  gap: 50px;
+  transition-duration: 2s;
+}
+
+.grid-container:hover {
+  gap: 0px;
+}
+
+.grid-container .puzzle-piece:nth-child(6n) {
+  transform: rotate(360deg);
+  translate: 100px 0;
+}
+.grid-container .puzzle-piece:nth-child(6n + 1) {
+  transform: rotate(-90deg);
+  translate: 0px -100px;
+}
+.grid-container .puzzle-piece:nth-child(6n + 2) {
+  transform: rotate(180deg);
+  translate: 0px 100px;
+}
+.grid-container .puzzle-piece:nth-child(6n + 3) {
+  transform: rotate(270deg);
+  translate: -100px 0;
+}
+.grid-container .puzzle-piece:nth-child(6n + 4) {
+  transform: rotate(90deg);
+  translate: 100px 0px;
+}
+.grid-container .puzzle-piece:nth-child(6n + 5) {
+  transform: rotate(-180deg);
+  translate: -100px 0;
+}
+
+.grid-container:hover .puzzle-piece {
+  transform: rotate(0deg);
+  translate: 0 0;
+  border-radius: 0%;
+}
+
+.puzzle-piece {
+  width: 50px;
+  height: 50px;
+  background-image: url("https://images.pexels.com/photos/19836798/pexels-photo-19836798/free-photo-of-interior-of-a-modern-minimalist-living-room.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+  background-size: 500px 500px; /* Adjust to the total grid size */
+  border: 0px solid #000;
+  transition-duration: 2s;
+}

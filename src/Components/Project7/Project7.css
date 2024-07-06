@@ -1,0 +1,54 @@
+.hover2 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgb(56, 140, 236) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.hover2 .hoverImage2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform-origin: right;
+    transition: 2s;
+    transform: perspective(2000px);
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0px;
+}
+.hover2 .hoverAbout {
+    position: absolute;
+    top: 0px;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hoverAbout h1 {
+    font-size: 30px;
+    margin-bottom: 13px;
+}
+.hoverAbout .hoverBtn {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.hoverAbout .hoverBtn button{
+    padding: 10px 20px;
+    outline: none;
+    font-size: 17px;
+    border-radius: 20px;
+    border: none;
+}
+.hover2:hover .hoverImage2 {
+    transform: rotateY(-180deg) perspective(2000px);
+}
