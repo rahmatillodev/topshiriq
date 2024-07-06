@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       {array.map((item ,index) =>
-       <p>
+       <p key={index}>
         <Link to={`project${index+1}`}>Project {index+1}</Link>
        </p>
       )}

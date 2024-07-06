@@ -2,12 +2,12 @@ import "./Project13.css"
 
 const Project13 = () => {
     return (
-        <div className="animationLeft">
+        <div classNameName="animationLeft">
             <button>
                 <span>
-                    <span class="container">
-                        <span class="primary"></span>
-                        <span class="complimentary"></span>
+                    <span className="container">
+                        <span className="primary"></span>
+                        <span className="complimentary"></span>
                     </span>
                 </span>
                 <span>Book a demo</span>
