@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/github.io/topshiriq/static/css/main.e3c808ef.css",
+    "main.js": "/github.io/topshiriq/static/js/main.ccd92b37.js",
+    "static/media/video2.mp4": "/github.io/topshiriq/static/media/video2.e5a43be84b9ef2895cd3.mp4",
+    "static/media/video.mp4": "/github.io/topshiriq/static/media/video.fb71f79cd36624b13df8.mp4",
+    "index.html": "/github.io/topshiriq/index.html",
+    "main.e3c808ef.css.map": "/github.io/topshiriq/static/css/main.e3c808ef.css.map",
+    "main.ccd92b37.js.map": "/github.io/topshiriq/static/js/main.ccd92b37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3c808ef.css",
+    "static/js/main.ccd92b37.js"
+  ]
+}
