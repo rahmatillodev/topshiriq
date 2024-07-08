@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Project1 from "./Components/Project1/Project1.jsx";
 import Project2 from "./Components/Project2/Project2.jsx";
 import Project3 from "./Components/Project3/Project3.jsx";
@@ -16,29 +16,31 @@ import Project14 from "./Components/Project14/Project14.jsx";
 import Project15 from "./Components/Project15/Project15.jsx";
 
 import Home from "./Components/Home/Home.jsx";
+import Project16 from "./Components/Project16/Project16.jsx";
 const App = () => {
-  // document.addEventListener('keydown', function (event) {
-  //   if (event.ctrlKey && event.key === 'u') {
-  //     event.preventDefault();
-  //     alert("Bu funksiyaga ruxsat berilmagan!");
-  //   }
-  //   if (event.ctrlKey && event.shiftKey && event.key === 'I') {
-  //     alert("Bu funksiyaga ruxsat berilmagan!");
-  //     event.preventDefault();
-  //   }
-  //   if (event.ctrlKey && event.shiftKey && event.key === 'J') {
-  //     alert("Bu funksiyaga ruxsat berilmagan!");
-  //     event.preventDefault();
-  //   }
-  //   if (event.key === 'F12') {
-  //     event.preventDefault();
-  //     alert("Bu funksiyaga ruxsat berilmagan!");
-  //   }
-  // });
-  // document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('keydown', function (event) {
+    if (event.ctrlKey && event.key === 'u') {
+      event.preventDefault();
+      alert("Bu funksiyaga ruxsat berilmagan!");
+    }
+    if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+      alert("Bu funksiyaga ruxsat berilmagan!");
+      event.preventDefault();
+    }
+    if (event.ctrlKey && event.shiftKey && event.key === 'J') {
+      alert("Bu funksiyaga ruxsat berilmagan!");
+      event.preventDefault();
+    }
+    if (event.key === 'F12') {
+      event.preventDefault();
+      alert("Bu funksiyaga ruxsat berilmagan!");
+    }
+  });
+  document.addEventListener('contextmenu', event => event.preventDefault());
 
   return (
     <BrowserRouter>
+    <Link to="/">Back</Link>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/project1" element={<Project1 />} />
@@ -56,6 +58,8 @@ const App = () => {
         <Route path="/project13" element={<Project13 />} />
         <Route path="/project14" element={<Project14 />} />
         <Route path="/project15" element={<Project15 />} />
+        <Route path="/project16" element={<Project16 />} />
+
       </Routes>
     </BrowserRouter>
   );
