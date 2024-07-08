@@ -2,7 +2,8 @@ import "./Project13.css"
 
 const Project13 = () => {
     return (
-        <div classNameName="animationLeft">
+        <body className="as1">
+        <div className="animationLeft">
             <button>
                 <span>
                     <span className="container">
@@ -13,6 +14,7 @@ const Project13 = () => {
                 <span>Book a demo</span>
             </button>
         </div>
+        </body>
     )
 }
 

@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 const Home = () => {
-  let array = ["","","","","","","","","","","","","","","",""]
+  let array = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "","","","",""];
   return (
-    <div>
-      {array.map((item ,index) =>
-       <p key={index}>
-        <Link to={`project${index+1}`}>Project {index+1}</Link>
-       </p>
-      )}
+    <div className="ahref">
+      {array.map((item, index) => (
+        <Link key={index} to={`project${index + 1}`}>
+          <p>Topshiriq {index + 1}</p>
+        </Link>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

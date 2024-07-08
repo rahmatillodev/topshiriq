@@ -2,7 +2,7 @@ import "./Project12.css"
 
 const Project12 = () => {
     return (
-        <div classNameName="chackedInput">
+        <div className="chackedInput">
             <fieldset>
                 <input type="checkbox" className="chip" role="switch" value="Pear" aria-label="Pear" />
                 <input type="checkbox" className="chip" role="switch" value="Banana" aria-label="Banana"  checked />

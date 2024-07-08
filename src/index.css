@@ -19,3 +19,32 @@ code {
 ::-webkit-scrollbar {
   width: 0px;
 }
+a {
+  text-decoration: none;
+}
+.br {
+   position: fixed;
+   top: 0px;
+   z-index:100;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: orange;
+   width: 100px;
+   height: 50px;
+   right: 0px;
+}
+.ahref  {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 50px;
+  text-align: center;
+}
+.ahref > a {
+  display: block;
+  padding: 20px 30px;
+  margin: auto;
+  background: orange;
+  
+}

@@ -14,35 +14,39 @@ import Project12 from "./Components/Project12/Project12.jsx";
 import Project13 from "./Components/Project13/Project13.jsx";
 import Project14 from "./Components/Project14/Project14.jsx";
 import Project15 from "./Components/Project15/Project15.jsx";
+import Project16 from "./Components/Project16/Project16.jsx";
+import Project17 from "./Components/Project17/Project17.jsx";
+import Project18 from "./Components/Project18/Project18.jsx";
+import Project19 from "./Components/Project19/Project19.jsx";
+import Project20 from "./Components/Project20/Project20.jsx";
 
 import Home from "./Components/Home/Home.jsx";
-import Project16 from "./Components/Project16/Project16.jsx";
 const App = () => {
-  document.addEventListener('keydown', function (event) {
-    if (event.ctrlKey && event.key === 'u') {
+  document.addEventListener("keydown", function (event) {
+    if (event.ctrlKey && event.key === "u") {
       event.preventDefault();
       alert("Bu funksiyaga ruxsat berilmagan!");
     }
-    if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+    if (event.ctrlKey && event.shiftKey && event.key === "I") {
       alert("Bu funksiyaga ruxsat berilmagan!");
       event.preventDefault();
     }
-    if (event.ctrlKey && event.shiftKey && event.key === 'J') {
+    if (event.ctrlKey && event.shiftKey && event.key === "J") {
       alert("Bu funksiyaga ruxsat berilmagan!");
       event.preventDefault();
     }
-    if (event.key === 'F12') {
+    if (event.key === "F12") {
       event.preventDefault();
       alert("Bu funksiyaga ruxsat berilmagan!");
     }
   });
-  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener("contextmenu", (event) => event.preventDefault());
 
   return (
     <BrowserRouter>
-    <Link to="/">Back</Link>
+      <Link to="/" className="br">Back</Link>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home />} />
         <Route path="/project1" element={<Project1 />} />
         <Route path="/project2" element={<Project2 />} />
         <Route path="/project3" element={<Project3 />} />
@@ -59,7 +63,10 @@ const App = () => {
         <Route path="/project14" element={<Project14 />} />
         <Route path="/project15" element={<Project15 />} />
         <Route path="/project16" element={<Project16 />} />
-
+        <Route path="/project17" element={<Project17 />} />
+        <Route path="/project18" element={<Project18 />} />
+        <Route path="/project19" element={<Project19 />} />
+        <Route path="/project20" element={<Project20 />} />
       </Routes>
     </BrowserRouter>
   );
